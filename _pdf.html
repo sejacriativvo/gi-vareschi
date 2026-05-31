@@ -5,26 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gisele Vareschi — Mídia Kit</title>
 <meta name="description" content="Mídia Kit de Gisele Vareschi. Influência lifestyle que constrói desejo e valor para marcas premium.">
-<link rel="icon" type="image/png" href="assets/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Gisele Vareschi — Mídia Kit">
-<meta property="og:description" content="Influência lifestyle que constrói desejo e valor para marcas premium. 24 mil seguidores · 80% público feminino · 798 mil views/mês.">
-<meta property="og:image" content="https://sejacriativvo.github.io/gi-vareschi/assets/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://sejacriativvo.github.io/gi-vareschi/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Gisele Vareschi — Mídia Kit">
-<meta name="twitter:description" content="Influência lifestyle que constrói desejo e valor para marcas premium.">
-<meta name="twitter:image" content="https://sejacriativvo.github.io/gi-vareschi/assets/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --cream:#FBF7F1;
-    --champagne:#F3EDE2;
-    --champagne-deep:#E7DAC6;
+    --champagne:#F1E7D8;
+    --champagne-deep:#E4D4BC;
     --gold:#BC9A5E;
     --gold-deep:#9A7C4F;
     --gold-lt:#E2CB92;
@@ -80,7 +68,7 @@
   /* ===== HERO ===== */
   .hero{
     min-height:100vh;display:flex;align-items:center;
-    background:linear-gradient(120deg,#F8F2E9 0%,#F1E9DB 58%,#E9DECC 100%);
+    background:linear-gradient(120deg,#F6EEE2 0%,#EFE2CE 58%,#E7D6BD 100%);
     overflow:hidden;
   }
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:center;width:100%;min-height:100vh}
@@ -112,7 +100,7 @@
     width:100%;height:120%;object-fit:cover;object-position:center 18%;
     will-change:transform;
   }
-  .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(241,233,219,.55) 0%,rgba(241,233,219,0) 22%)}
+  .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(239,226,206,.55) 0%,rgba(239,226,206,0) 22%)}
   .scrollcue{
     position:absolute;bottom:34px;left:50%;transform:translateX(-50%);
     font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);
@@ -300,7 +288,7 @@
   /* ===== CONTATO ===== */
   .cta-final{
     padding:160px 0;text-align:center;position:relative;overflow:hidden;
-    background:linear-gradient(120deg,#F8F2E9 0%,#EADFCB 100%);
+    background:linear-gradient(120deg,#F6EEE2 0%,#E8D9C0 100%);
   }
   .cta-final .eyebrow{color:var(--gold-deep)}
   .cta-final h2{font-size:clamp(3rem,6vw,5.4rem);margin:.25em 0;letter-spacing:-.01em}
@@ -483,7 +471,7 @@
       <p class="reveal d2">Trabalho com marcas que conversam com a minha rotina e com o meu público.</p>
     </div>
     <div class="hint reveal d2" id="gravHint">Clique e arraste</div>
-    <div class="grav-world reveal d2" id="gravWorld">
+    <div class="grav-world reveal d2" id="gravWorldStatic">
       <span class="gchip gc-gold">Beleza &amp; Skincare Premium</span>
       <span class="gchip gc-esp">Moda &amp; Acessórios</span>
       <span class="gchip gc-line">Bem-estar &amp; Saúde</span>
@@ -705,5 +693,22 @@
     else window.open('https://www.instagram.com/giselevmakeup/','_blank');
   });
 </script>
+
+<style id="pdf">
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+@page{size:A4;margin:14mm 12mm}
+html{scroll-behavior:auto}
+nav,.scrollcue,footer{display:none!important}
+.reveal{opacity:1!important;transform:none!important}
+.age-fill{width:60%!important}.bf-avg{width:15%!important}.bf-gi{width:92%!important}.d-ring{stroke-dashoffset:65.34!important}
+.hero{min-height:auto!important}.hero-grid{min-height:auto!important;gap:30px!important}.hero-photo{height:540px!important}
+section{padding-top:46px!important;padding-bottom:46px!important}
+.hero{padding:0!important}
+.pcard,.vcard,.plan,.pil,.proof-foot,.sobre-grid,.valor-top,.donut-mini,.bars,.age,.cta-btns{break-inside:avoid!important;page-break-inside:avoid!important}
+.proof-head,.valor-intro,.pac .head,.pilares .head,.marcas .head{break-after:avoid!important}
+h1,h2,h3{break-after:avoid!important}
+.proof-grid,.valor-grid,.pac-grid{gap:18px!important}
+</style>
+<script>window.addEventListener('load',()=>{document.querySelectorAll('[data-count]').forEach(el=>{const t=(+el.dataset.count).toLocaleString('pt-BR');el.innerHTML=t+(el.dataset.suffix?'<span class="suffix">'+el.dataset.suffix+'</span>':'');});});</script>
 </body>
 </html>
